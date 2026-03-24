@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 using namespace std;
 struct Rect {
@@ -7,7 +7,7 @@ struct Rect {
     float w, h;
 };
 
-// 核心逻辑：判断两个矩形是否重叠
+// 判斷
 bool checkCollision(const Rect& r1, const Rect& r2) {
     return (r1.x < r2.x + r2.w &&
         r1.x + r1.w > r2.x &&
@@ -20,11 +20,11 @@ int main() {
 
     cout << "碰撞判定\n";
 
-    // 输入第一个矩形的数据
+    // 數據輸入
     cout << "輸入A " << r1.name << " 的數值 (x y 寬 高): ";
     cin >> r1.x >> r1.y >> r1.w >> r1.h;
 
-    // 输入第二个矩形的数据
+    
     cout << "輸入B " << r2.name << "  的數值 (x y 寬 高): ";
     cin >> r2.x >> r2.y >> r2.w >> r2.h;
 
